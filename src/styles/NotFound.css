@@ -1,0 +1,25 @@
+.notfound {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.notfound__code {
+    font-size: clamp(5rem, 12vw, 8rem);
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+    opacity: 0.2;
+    margin-bottom: 12px;
+}
+
+.notfound__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.notfound__text {
+    color: var(--color-gray);
+    font-size: 1rem;
+    margin-bottom: 28px;
+}

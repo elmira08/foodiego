@@ -1,0 +1,223 @@
+.cart-page {
+    min-height: calc(100vh - 68px);
+    padding: 32px 0 60px;
+}
+
+.cart-page__title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.cart-page__layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 28px;
+    align-items: start;
+}
+
+/* Cart items */
+.cart-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px;
+    background: white;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    margin-bottom: 10px;
+}
+
+.cart-row__img {
+    width: 72px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+.cart-row__info {
+    flex: 1;
+}
+
+.cart-row__name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.cart-row__unit {
+    font-size: 0.8rem;
+    color: var(--color-gray);
+}
+
+.cart-row__qty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-full);
+    padding: 4px 12px;
+}
+
+.cart-row__qty-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--transition);
+}
+
+.cart-row__qty-btn:hover {
+    color: var(--color-primary);
+}
+
+.cart-row__qty-val {
+    font-weight: 700;
+    font-size: 0.9rem;
+    min-width: 16px;
+    text-align: center;
+}
+
+.cart-row__subtotal {
+    font-weight: 800;
+    font-size: 1rem;
+    min-width: 60px;
+    text-align: right;
+}
+
+.cart-row__remove {
+    color: var(--color-gray);
+    font-size: 0.78rem;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+}
+
+.cart-row__remove:hover {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.cart-page__clear {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #dc2626;
+    margin-top: 4px;
+    padding: 6px 0;
+    transition: opacity var(--transition);
+}
+
+.cart-page__clear:hover {
+    opacity: 0.7;
+}
+
+/* Summary */
+.cart-page__summary {
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    padding: 22px;
+    position: sticky;
+    top: 88px;
+}
+
+.cart-summary__title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.cart-summary__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.cart-summary__row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88rem;
+    color: var(--color-gray);
+}
+
+.cart-summary__row--total {
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--color-dark);
+    margin-top: 4px;
+}
+
+.cart-summary__divider {
+    border-top: 1px solid var(--color-border);
+    margin-bottom: 12px;
+}
+
+.cart-summary__btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 16px;
+}
+
+.cart-summary__continue {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-gray);
+    padding: 8px;
+    margin-top: 4px;
+    transition: color var(--transition);
+}
+
+.cart-summary__continue:hover {
+    color: var(--color-dark);
+}
+
+/* Empty state */
+.cart-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.cart-empty__icon {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.cart-empty h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.cart-empty p {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .cart-page__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-page__summary {
+        position: static;
+    }
+}

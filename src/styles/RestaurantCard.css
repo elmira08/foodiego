@@ -1,0 +1,73 @@
+.rcard {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    padding: 16px;
+    cursor: pointer;
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.rcard:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+}
+
+.rcard__img {
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+}
+
+.rcard__body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.rcard__name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.rcard__cuisine {
+    font-size: 0.82rem;
+    color: var(--color-gray);
+}
+
+.rcard__meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.82rem;
+    margin-top: 4px;
+    flex-wrap: wrap;
+}
+
+.rcard__rating {
+    color: var(--color-warning);
+    font-weight: 600;
+}
+
+.rcard__dot {
+    color: var(--color-border);
+}
+
+.rcard__time {
+    color: var(--color-gray-dark);
+}
+
+.rcard__free {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.rcard__fee {
+    color: var(--color-gray-dark);
+}

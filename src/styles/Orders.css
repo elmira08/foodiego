@@ -1,0 +1,79 @@
+.orders__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    padding: 18px 22px;
+}
+
+.order-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+
+.order-card__restaurant {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.order-card__date {
+    font-size: 0.8rem;
+    color: var(--color-gray);
+}
+
+.order-card__status {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.order-card__status--delivered {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.order-card__status--pending {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+.order-card__items {
+    border-top: 1px solid var(--color-border);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.order-card__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--color-gray);
+}
+
+.order-card__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.88rem;
+    color: var(--color-gray);
+}
+
+.order-card__total {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-dark);
+}

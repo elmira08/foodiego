@@ -1,0 +1,130 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar__logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    white-space: nowrap;
+    margin-right: 8px;
+}
+
+.navbar__toggle {
+    display: flex;
+    background: var(--color-gray-light);
+    border-radius: var(--radius-full);
+    padding: 3px;
+    gap: 2px;
+}
+
+.navbar__toggle-btn {
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--color-gray);
+    transition: all var(--transition);
+    white-space: nowrap;
+}
+
+.navbar__toggle-btn.active {
+    background: white;
+    color: var(--color-dark);
+    box-shadow: var(--shadow-sm);
+    font-weight: 600;
+}
+
+.navbar__location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--color-dark);
+    white-space: nowrap;
+}
+
+.navbar__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.navbar__cart-wrap {
+    position: relative;
+}
+
+.navbar__cart-btn {
+    position: relative;
+    font-size: 1.3rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background var(--transition);
+}
+
+.navbar__cart-btn:hover {
+    background: var(--color-gray-light);
+}
+
+.navbar__cart-badge {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid white;
+}
+
+.navbar__signin {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    padding: 8px 12px;
+    border-radius: var(--radius-full);
+    transition: background var(--transition);
+}
+
+.navbar__signin:hover {
+    background: var(--color-gray-light);
+}
+
+.navbar__create {
+    font-size: 0.88rem;
+    padding: 9px 18px;
+}
+
+@media (max-width: 700px) {
+
+    .navbar__location,
+    .navbar__toggle {
+        display: none;
+    }
+}
