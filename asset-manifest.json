@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/foodiego/static/css/main.30dfa49f.css",
-    "main.js": "/foodiego/static/js/main.916eadb6.js",
+    "main.js": "/foodiego/static/js/main.3e931663.js",
     "static/media/pizza.webp": "/foodiego/static/media/pizza.1df5bb062bb3a3081441.webp",
     "static/media/veggie-pizza.webp": "/foodiego/static/media/veggie-pizza.25242075efc6f0b75dab.webp",
     "static/media/ceaser-salad.webp": "/foodiego/static/media/ceaser-salad.d13280af91ea6ddbb8f5.webp",
@@ -100,10 +100,10 @@
     "static/media/sushi11.webp": "/foodiego/static/media/sushi11.7306fc70d1c2a5b75bbf.webp",
     "index.html": "/foodiego/index.html",
     "main.30dfa49f.css.map": "/foodiego/static/css/main.30dfa49f.css.map",
-    "main.916eadb6.js.map": "/foodiego/static/js/main.916eadb6.js.map"
+    "main.3e931663.js.map": "/foodiego/static/js/main.3e931663.js.map"
   },
   "entrypoints": [
     "static/css/main.30dfa49f.css",
-    "static/js/main.916eadb6.js"
+    "static/js/main.3e931663.js"
   ]
 }
