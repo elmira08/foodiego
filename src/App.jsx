@@ -15,7 +15,7 @@ function App() {
   return (
     <DeliveryProvider>
       <CartProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/foodiego">
           <Routes>
             <Route path="/" element={<MainLayout />}>
               <Route index element={<Home />} />
