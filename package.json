@@ -2,7 +2,7 @@
   "name": "foodiego",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://elmira08.github.io/foodiego",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
